@@ -1,10 +1,10 @@
-function createGreeter() {
-  const myName = 'Gaetan';
-
+function createGreeter(myName) {
   return function () {
     console.log(myName);
   };
 }
 
-const greet = createGreeter();
-greet();
+const greetGaetan = createGreeter('Gaetan');
+const greetSeb = createGreeter('Seb');
+greetGaetan();
+greetSeb();
